@@ -13,14 +13,14 @@ class Body extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'num ' + Provider.of<Num>(context).num.toString(),
+              'word: ' + Provider.of<Word>(context).word,
             ),
             ElevatedButton(
               onPressed: () => {
                 Navigator.of(context).pushNamed('/sec'),
               },
               child: Text(
-                'num ' + Provider.of<Num>(context).num.toString(),
+                'word: ' + Provider.of<Word>(context).word,
               ),
             ),
           ],

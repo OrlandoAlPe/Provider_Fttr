@@ -13,20 +13,36 @@ class MainButtons extends StatelessWidget {
       children: [
         FloatingActionButton(
           onPressed: () {
-            Provider.of<Num>(context, listen: false)
-                .changeNum(1);
+            Provider.of<Word>(context, listen: false).changeNum('Croissant');
           },
-          child: Icon(Icons.plus_one),
+          child: Icon(Icons.bakery_dining_outlined),
         ),
         SizedBox(
           height: 10,
         ),
         FloatingActionButton(
           onPressed: () {
-            Provider.of<Num>(context, listen: false)
-                .changeNum(2);
+            Provider.of<Word>(context, listen: false).changeNum('Car');
           },
-          child: Icon(Icons.exposure_minus_1),
+          child: Icon(Icons.directions_car_filled_sharp),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        FloatingActionButton(
+          onPressed: () {
+            Provider.of<Word>(context, listen: false).changeNum('Train');
+          },
+          child: Icon(Icons.train),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        FloatingActionButton(
+          onPressed: () {
+            Provider.of<Word>(context, listen: false).changeNum('Coffe');
+          },
+          child: Icon(Icons.free_breakfast_rounded),
         )
       ],
     );

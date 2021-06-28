@@ -15,7 +15,7 @@ class _SecBodyState extends State<SecBody> {
   Widget build(BuildContext context) {
     return (Center(
       child: Text(
-        'num ' + Provider.of<Num>(context).num.toString(),
+        'word: ' + Provider.of<Word>(context).word,
       ),
     ));
   }

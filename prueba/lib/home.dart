@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('num ' + Provider.of<Num>(context).num.toString()),
+        title: Text('word: ' + Provider.of<Word>(context).word),
       ),
       body: Body(),
       floatingActionButton: MainButtons(),

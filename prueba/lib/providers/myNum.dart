@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Num with ChangeNotifier {
-  int num = 0;
+class Word with ChangeNotifier {
+  String word = 'ALFA';
 
-  void changeNum(int newNum) {
-    num = newNum;
+  void changeNum(String newWord) {
+    word = newWord;
     notifyListeners();
   }
 }
