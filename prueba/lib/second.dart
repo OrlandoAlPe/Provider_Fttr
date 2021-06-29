@@ -10,10 +10,11 @@ class Second extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Word : ' + Provider.of<Word>(context).word),
-      ),
-      body:SecBody()
-    );
+        appBar: AppBar(
+          title: Text('Word : ' +
+              Provider.of<Word>(context)
+                  .word), //accesing the word attribute in the store
+        ),
+        body: SecBody());
   }
 }

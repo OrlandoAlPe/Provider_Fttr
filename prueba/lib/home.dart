@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('word: ' + Provider.of<Word>(context).word),
+        title: Text('word: ' + Provider.of<Word>(context).word) //accesing the word attribute in the store,
       ),
       body: Body(),
       floatingActionButton: MainButtons(),

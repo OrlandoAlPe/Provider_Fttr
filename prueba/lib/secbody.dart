@@ -15,7 +15,9 @@ class _SecBodyState extends State<SecBody> {
   Widget build(BuildContext context) {
     return (Center(
       child: Text(
-        'word: ' + Provider.of<Word>(context).word,
+        'word: ' +
+            Provider.of<Word>(context)
+                .word, //accesing the word attribute in the store
       ),
     ));
   }

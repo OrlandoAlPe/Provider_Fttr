@@ -13,14 +13,18 @@ class Body extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'word: ' + Provider.of<Word>(context).word,
+              'word: ' +
+                  Provider.of<Word>(context)
+                      .word, //accesing the word attribute in the store
             ),
             ElevatedButton(
               onPressed: () => {
                 Navigator.of(context).pushNamed('/sec'),
               },
               child: Text(
-                'word: ' + Provider.of<Word>(context).word,
+                'word: ' +
+                    Provider.of<Word>(context)
+                        .word, //accesing the word attribute in the store
               ),
             ),
           ],

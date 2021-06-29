@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
+      //se tiene que "envolver" el componente raiz para que el resto de los componentes
+      //tengan acceso a la "store"
       create: (_)=> Word(),
       child: MaterialApp(
           title: 'Flutter Demo',
